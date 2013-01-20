@@ -2,7 +2,7 @@ html
   head
     title Overscroll
     link(rel="stylesheet", type="text/css", href="style.css")
-    meta(name='viewport', content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0')
     script(src='jquery-1.9.0.min.js')
     script(src='kbd-scroll.js')
 
@@ -24,3 +24,8 @@ html
                 input(value='Fifth')
               div
                 button Submit
+
+    script
+      $(function () {
+        $('.kbd-scroll').kbdScroll();
+      });
